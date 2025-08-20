@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografia - Engenharia Social</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .infographic-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .infographic-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        
+        .info-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid #1a2a6c;
+            transition: transform 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .info-card h2 {
+            color: #1a2a6c;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .info-card h2 i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .info-card ul {
+            list-style-type: none;
+        }
+        
+        .info-card li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .info-card li:before {
+            content: "•";
+            color: #b21f1f;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .concept-card {
+            border-top-color: #1a2a6c;
+            grid-column: 1 / -1;
+        }
+        
+        .techniques-card {
+            border-top-color: #b21f1f;
+        }
+        
+        .targets-card {
+            border-top-color: #fdbb2d;
+        }
+        
+        .warning-card {
+            border-top-color: #28a745;
+        }
+        
+        .consequences-card {
+            border-top-color: #dc3545;
+        }
+        
+        .prevention-card {
+            border-top-color: #17a2b8;
+        }
+        
+        .solution-card {
+            border-top-color: #6f42c1;
+        }
+        
+        .statistics {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+        .statistics h2 {
+            margin-bottom: 20px;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            margin: 15px;
+            min-width: 200px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f0f0f0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .infographic-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="infographic-container">
+        <header>
+            <h1>ENGENHARIA SOCIAL</h1>
+            <p class="subtitle">A arte de manipular pessoas para obter informações confidenciais</p>
+            <p class="subtitle" align="right">Rosangela & Migbert</p>
+        </header>
+        
+        <div class="infographic-content">
+            <div class="info-card concept-card">
+                <h2>O que é Engenharia Social?</h2>
+                <p>A engenharia social é uma técnica de manipulação psicológica que explora a confiança das pessoas para obter informações confidenciais ou acesso a sistemas restritos. Diferente de ataques técnicos, a engenharia social visa o elo mais fraco da segurança: o ser humano.</p>
+            </div>
+            
+            <div class="info-card techniques-card">
+                <h2>Técnicas Principais</h2>
+                <ul>
+                    <li>Phishing (e-mails falsos)</li>
+                    <li>Vishing (chamadas telefônicas)</li>
+                    <li>Smishing (mensagens SMS)</li>
+                    <li>Pretexting (criação de cenários falsos)</li>
+                    <li>Baiting (oferta de iscas)</li>
+                    <li>Tailgating (acesso físico não autorizado)</li>
+                    <li>Quid pro quo (oferta de algo em troca)</li>
+                </ul>
+            </div>
+            
+            <div class="info-card targets-card">
+                <h2>Principais Alvos</h2>
+                <ul>
+                    <li>Funcionários de empresas (especialmente não técnicos)</li>
+                    <li>Idosos (menos familiarizados com tecnologia)</li>
+                    <li>Usuários de redes sociais (exposição excessiva)</li>
+                    <li>Pessoas em posições de autoridade</li>
+                    <li>Setores de atendimento ao cliente</li>
+                    <li>Recursos humanos (possuem muitas informações)</li>
+                </ul>
+            </div>
+            
+            <div class="info-card warning-card">
+                <h2>Sinais de Alerta</h2>
+                <ul>
+                    <li>Solicitações urgentes ou que criam pânico</li>
+                    <li>Ofertas boas demais para serem verdade</li>
+                    <li>Erros gramaticais e ortográficos em comunicações</li>
+                    <li>Solicitação de informações pessoais ou credenciais</li>
+                    <li>URLs que não coincidem com o site oficial</li>
+                    <li>Pressão para contornar políticas de segurança</li>
+                    <li>Comunicações fora dos canais normais</li>
+                </ul>
+            </div>
+            
+            <div class="info-card consequences-card">
+                <h2>Consequências</h2>
+                <ul>
+                    <li>Roubo de identidade</li>
+                    <li>Perdas financeiras</li>
+                    <li>Vazamento de dados confidenciais</li>
+                    <li>Danos à reputação pessoal e corporativa</li>
+                    <li>Acesso não autorizado a sistemas</li>
+                    <li>Paralisia de operações</li>
+                    <li>Extorsão e chantagem</li>
+                </ul>
+            </div>
+            
+            <div class="info-card prevention-card">
+                <h2>Prevenção</h2>
+                <ul>
+                    <li>Eduque-se e à sua equipe sobre os riscos</li>
+                    <li>Verifique a identidade de quem solicita informações</li>
+                    <li>Nunca revele senhas ou dados sensíveis</li>
+                    <li>Mantenha software antivírus atualizado</li>
+                    <li>Use autenticação de dois fatores</li>
+                    <li>Desconfie de ofertas e oportunidades irreais</li>
+                    <li>Implemente políticas claras de segurança</li>
+                </ul>
+            </div>
+            
+            <div class="info-card solution-card">
+                <h2>Como Resolver Incidentes</h2>
+                <ul>
+                    <li>Isole imediatamente os sistemas comprometidos</li>
+                    <li>Altere todas as senhas relacionadas</li>
+                    <li>Notifique o departamento de TI/segurança</li>
+                    <li>Contate instituições financeiras se necessário</li>
+                    <li>Relate às autoridades em casos de crime</li>
+                    <li>Monitore contas e transações suspeitas</li>
+                    <li>Revise e fortaleça políticas de segurança</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="statistics">
+            <h2>Estatísticas Importantes</h2>
+            <div class="stats-container">
+                <div class="stat">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">dos ataques cibernéticos envolvem engenharia social</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">das violações de dados têm componente humano</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4,5x</div>
+                    <div class="stat-label">aumento em ataques de phishing durante a pandemia</div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 - Segurança de Dados - Infografia de Segurança da Informação | Proteja-se contra ataques de engenharia social</p>
+        </footer>
+    </div>
+</body>
+</html>
